@@ -17,3 +17,8 @@ variable "eks_name" {
   description = "AWS EKS Cluster name"
   type        = string
 }
+
+variable "sg_name" {
+  description = "Security group name"
+  default     = "aws-eks-sg"
+}
