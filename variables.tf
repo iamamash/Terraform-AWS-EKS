@@ -1,14 +1,19 @@
+variable "aws_region" {
+  description = "AWS region"
+  default     = "us-east-1"
+}
+
 variable "vpc_name" {
   description = "VPC name"
-  default     = string
+  type        = string
 }
 
 variable "vpc_cidr" {
   description = "VPC CIDR"
-  default     = string
+  type        = string
 }
 
 variable "eks_name" {
   description = "AWS EKS Cluster name"
-  default     = string
+  type        = string
 }
